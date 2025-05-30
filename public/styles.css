@@ -8,6 +8,20 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-name {
+  color: black;
+  margin: 0;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
 .overlay {
   padding: 10px;
   background: rgba(52, 52, 53, 0.884);
@@ -21,7 +35,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
   font-size: 18px;
 }
 
@@ -31,6 +44,10 @@ body {
 }
 
 .racer-name {
+  margin-left: 8px;
+}
+
+.number {
   margin-left: 8px;
 }
 
@@ -71,4 +88,5 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
+  margin-left: 10px;
 }
