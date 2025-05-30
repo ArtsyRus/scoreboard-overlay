@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: transparent;
+  color: white;
+  font-family: sans-serif;
+}
+
+.overlay {
+  padding: 10px;
+  background: rgba(52, 52, 53, 0.884);
+  border-radius: 10px;
+   max-width: 800px;
+  min-width: 500px;
+  opacity: 0.8; /* <-- This controls overall transparency */
+}
+
+.racer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.racer-left {
+  display: flex;
+  align-items: center;
+}
+
+.racer-name {
+  margin-left: 8px;
+}
+
+.racer-score {
+  min-width: 50px;
+  text-align: right;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.racer-position {
+  margin-right: 12px;
+  width: 40px;
+  text-align: right;
+}
+
+.racer:nth-child(1) {
+  background: rgb(255, 217, 0);
+  color: black;
+  font-weight: bold;
+}
+
+.racer:nth-child(2) {
+  background: rgb(192, 192, 192);
+  color: black;
+  font-weight: bold;
+}
+
+.racer:nth-child(3) {
+  background: #cd8032; /* bronze */
+  color: black;
+  font-weight: bold;
+}
+
+.racer-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}

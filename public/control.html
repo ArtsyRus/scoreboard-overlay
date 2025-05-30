@@ -1,0 +1,58 @@
+<!-- public/control.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overlay Controls</title>
+  <link rel="stylesheet" href="control.css">
+</head>
+<body>
+    <div class="controls-container">
+    <h2>Race Controls</h2>
+
+    <h3>Set Number of Drivers</h3>
+    <form id="resetForm">
+        <label>
+        Number of Drivers (1–16):
+        <input type="number" id="driverCount" min="1" max="16" required>
+        </label>
+        <button type="submit">Set</button>
+    </form>
+
+    <h3>Rename Racer</h3>
+    <form id="renameForm">
+        <label>Select Racer:
+        <select id="renameSelect"></select>
+        </label>
+        <label>New Name:
+        <input type="text" id="newName" required>
+        </label>
+        <button type="submit">Rename Driver</button>
+    </form>
+
+    <h3>Upload Driver Image</h3>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label>Select Racer:
+        <select id="imageSelect"></select>
+        </label>
+        <label>Image:
+        <input type="file" name="image" accept="image/*" required>
+        </label>
+        <button type="submit">Upload Image</button>
+    </form>
+
+    <h3>Update Score</h3>
+    <form id="scoreForm">
+        <label>Select Racer:
+        <select id="scoreSelect"></select>
+        </label>
+        <label>New Score:
+        <input type="number" id="newScore" required>
+        </label>
+        <button type="submit">Update Score</button>
+    </form>
+    </div>
+
+  <script src="control.js"></script>
+</body>
+</html>

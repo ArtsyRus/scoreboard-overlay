@@ -1,0 +1,81 @@
+<!-- public/control.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overlay Controls</title>
+  <link rel="stylesheet" href="control.css">
+</head>
+<!-- <body>
+  <h1>Overlay Controls</h1>
+
+  <form id="positionForm">
+    <label>Racer:
+      <select id="racerSelect"></select>
+    </label>
+    <label>New Score:
+      <input type="number" id="newScore" min="0" required>
+    </label>
+    <button type="submit">Update Score</button>
+  </form>
+
+  <form id="renameForm" style="margin-top:20px;">
+    <label>Select Racer:
+      <select id="renameSelect"></select>
+    </label>
+    <label>New Name:
+      <input type="text" id="newName" required>
+    </label>
+    <button type="submit">Rename Driver</button>
+  </form>
+
+  <script src="control.js"></script>
+</body> -->
+
+<body>
+  <div class="controls-container">
+    <h2>Race Controls</h2>
+
+    <h3>Change Racer Position</h3>
+    <form id="positionForm">...</form>
+
+    <h3>Rename Racer</h3>
+    <form id="renameForm">...</form>
+
+    <h3>Update Score</h3>
+    <form id="scoreForm">...</form>
+
+    <form id="positionForm">
+      <label>Racer:
+        <select id="racerSelect"></select>
+      </label>
+      <label>New Position:
+        <input type="number" id="newPosition" min="1" max="16" required>
+      </label>
+      <button type="submit">Change Position</button>
+    </form>
+
+    <form id="renameForm">
+      <label>Select Racer:
+        <select id="renameSelect"></select>
+      </label>
+      <label>New Name:
+        <input type="text" id="newName" required>
+      </label>
+      <button type="submit">Rename Driver</button>
+    </form>
+
+    <form id="scoreForm">
+      <label>Select Racer:
+        <select id="scoreSelect"></select>
+      </label>
+      <label>New Score:
+        <input type="number" id="newScore" required>
+      </label>
+      <button type="submit">Update Score</button>
+    </form>
+  </div>
+
+  <script src="control.js"></script>
+</body>
+</html>
