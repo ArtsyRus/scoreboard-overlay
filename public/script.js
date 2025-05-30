@@ -15,10 +15,13 @@ function renderRacers() {
     div.className = 'racer';
     div.innerHTML = `
       <div class="racer-left">
-        <div class="rhombus position-rhombus"><span>#${racer.position}</span></div>
-          <img src="${racer.image || 'default.png'}" class="racer-icon" />
+        <div class="number">
+          <span>${racer.position}</span>
         </div>
+        <img src="${racer.image || 'default.png'}" class="racer-icon" />
         <span class="racer-name">${racer.name}</span>
+      </div>
+        
       </div>
       <span class="racer-score">${racer.score}</span>
     `;
