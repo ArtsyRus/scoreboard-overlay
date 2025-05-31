@@ -38,24 +38,24 @@ document.getElementById('resetForm').addEventListener('submit', function (e) {
   }
 });
 
-document.getElementById('uploadForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const form = e.target;
-  const formData = new FormData();
-  const id = document.getElementById('imageSelect').value;
-  const file = form.querySelector('input[type="file"]').files[0];
+// document.getElementById('uploadForm').addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   const form = e.target;
+//   const formData = new FormData();
+//   const id = document.getElementById('imageSelect').value;
+//   const file = form.querySelector('input[type="file"]').files[0];
 
-  formData.append('id', id);
-  formData.append('image', file);
+//   formData.append('id', id);
+//   formData.append('image', file);
 
-  fetch('/upload', {
-    method: 'POST',
-    body: formData
-  }).then(res => {
-    if (!res.ok) return alert('Upload failed');
-    alert('Image uploaded');
-  });
-});
+//   fetch('/upload', {
+//     method: 'POST',
+//     body: formData
+//   }).then(res => {
+//     if (!res.ok) return alert('Upload failed');
+//     alert('Image uploaded');
+//   });
+// });
 
 document.getElementById('renameForm').addEventListener('submit', function (e) {
   e.preventDefault();

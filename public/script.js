@@ -18,10 +18,8 @@ function renderRacers() {
         <div class="number">
           <span>${racer.position}</span>
         </div>
-        <img src="${racer.image || 'default.png'}" class="racer-icon" />
+          <!-- <img src="${racer.image || 'images/default.png'}" class="racer-icon" /> --> 
         <span class="racer-name">${racer.name}</span>
-      </div>
-        
       </div>
       <span class="racer-score">${racer.score}</span>
     `;
