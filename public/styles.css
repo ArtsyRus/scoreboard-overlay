@@ -15,6 +15,89 @@ body {
   align-items: center;
 }
 
+.header {
+  display: flex;
+  justify-content: start;
+  background: rgba(25, 25, 26, 0.938); /* Optional subtle gradient */
+  padding: 2px;
+  margin-bottom: 1px;
+  border-radius: 2px 2px 0px 0px;
+  /* max-width: 500px;
+  max-height: 200px; */
+  opacity: 0.8;
+}
+
+.header-logo {
+  height: 100%;
+  width: 496px /* Adjust as needed */
+}
+
+/* .header-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+} */
+
+.rankings {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  background: rgba(25, 25, 26, 0.938);
+  padding: 2px;
+  max-width: 500px;
+  max-height: 30px;
+  height: 30px;             /* ensure height is fixed */
+  opacity: 0.8;
+  margin-bottom: 1px;
+  border-radius: 1px;
+}
+
+.rankings-name {
+  text-align: center;
+  width: 496px;
+  font-size: 20px;         /* optional: make it fit better */
+  margin: 0;               /* remove default h5 margin */
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.points-container {
+  display: flex;
+  justify-content: right; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  background: rgba(25, 25, 26, 0.938);
+  padding: 2px;
+  width: 496px;
+  max-height: 30px; 
+  height: fit-content;           /* ensure height is fixed */
+  opacity: 0.8;
+  margin-bottom: 1px;
+  border-radius: 1px;
+}
+
+.points {
+  background: linear-gradient(to bottom, rgb(189, 5, 5), rgb(148, 5, 5));
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  width: 50px;
+  height: 33px;
+  margin-right: 8px; 
+  /* width: 100%; */
+}
+
+.points-score {
+  text-align: center;
+  /* min-width: 50px;
+  max-width: 50px; */
+  /* height: 33px; */
+  font-size: 12px;         /* optional: make it fit better */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .container-name {
   color: white;
   margin: 0;
