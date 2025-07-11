@@ -70,8 +70,9 @@ body {
   background: linear-gradient(to bottom, rgb(189, 5, 5), rgb(148, 5, 5));
   /* background: rgba(190, 6, 6, 0.959); */
   min-width: 50px;
-  text-align: right;
-  margin-right: 8px;
+  max-width: 50px;
+  margin-right: 10px;
+  text-align: center;
   font-weight: bold;
 }
 
